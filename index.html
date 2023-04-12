@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include Slick slider library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <!-- Include Font Awesome library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Montserrat:ital,wght@0,100;0,300;0,600;0,700;1,200;1,300;1,500;1,600;1,800;1,900&family=Noto+Sans+JP:wght@500;700;900&family=Open+Sans:wght@300;400&family=Poor+Story&family=Poppins:wght@100;200;400&family=Raleway:ital,wght@0,400;0,600;0,700;1,100;1,200;1,300&family=Roboto+Slab&family=Schibsted+Grotesk&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Montserrat:ital,wght@0,100;0,300;0,600;0,700;1,200;1,300;1,500;1,600;1,800;1,900&family=Noto+Sans+JP:wght@500;700;900&family=Open+Sans:wght@300;400&family=Poor+Story&family=Poppins:wght@100;200;400&family=Raleway:ital,wght@0,400;0,600;0,700;1,100;1,200;1,300&family=Roboto+Slab&family=Schibsted+Grotesk&display=swap');
+
+      </style> 
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==
+       "
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"
+      integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==
+       "
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="upper-header">
+        <div class="container flex">
+          <div class="upper-header-icon">
+            <div>
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>1234-5678-9091</span>
+            </div>
+            <div>
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <span>Monday - Saturday 9:00 - 18:00</span>
+            </div>
+          </div>
+          <div class="upper-header-icon">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="lower-header">
+        <div class="container flex">
+          <a href=""><img src="images/logo.png" /></a>
+          <nav class="desktop-nav">
+            <ul>
+              <li><a href="">ABOUT</a></li>
+              <li><a href="">PRODUCTS</a></li>
+              <li><a href="">SERVICES</a></li>
+              <li><a href=""> WORK</a></li>
+              <li><a href="">Contant US</a></li>
+            </ul>
+          </nav>
+          <button class="hamburger">
+            <div class="bar"></div>
+          </button>
+        </div>
+      </div>
+    </header>
+    <nav class="mobile-nav">
+      <li> <a href="">ABOUT</a></li>
+            <li><a href="">PRODUCTS</a></li>
+            <li><a href="">SERVICES</a></li>
+            <li><a href=""> WORK</a></li>
+            <li><a href="">Contant US</a></li>
+    </nav>
+    <section class="banner ">
+      <div class="slide-1">
+        <img src="images/layer-2.png">
+        <div class="slide-content-1 container">
+         
+          <h3>Let Us Help You</h3>
+          <h2>Stop Working. Spare Some Time for Real Life</h2>
+          <p>
+            Our professional and experienced team does the job right the first
+            time
+          </p>
+          <a href="">Quick Quote</a>
+        </div>
+
+      </div>
+      <div class="slide-1">
+        <img src="images/pexels-cottonbro-studio-4108712.jpg">
+        <div class="slide-content-1 container">
+         
+          <h3>Let Us Help You</h3>
+          <h2>Stop Working. Spare Some Time for Real Life</h2>
+          <p>
+            Our professional and experienced team does the job right the first
+            time
+          </p>
+          <a href="">Quick Quote</a>
+        </div>
+
+    </section>
+
+    <section class="about">
+      <div class="about-container">
+        <div class="left">
+          <h2>About the Task <span>Rabbit</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            placerat. Aenean id dolor luctus, sodales nunc at, fermentum vel
+            elit viverra vestibulum. Proin ullamcorper elit ipsum. Sed nec
+            hendrerit tempus, molestie vitae leo. Etiam dignissim interdum.
+            Mauris ut fermentum.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            placerat. Aenean id dolor luctus, sodales nunc at, fermentum vel
+            elit viverra vestibulum. Proin ullamcorper elit ipsum. Sed nec
+            hendrerit tempus, molestie vit.
+          </p>
+          <a href="">Read more</a>
+        </div>
+
+        <div class="right">
+          <div class="right-contain">
+            <div>
+              <img src="images/5c97be7af9bdd5d12a67b3f8fa36f54d.png" />
+              <h3>A Trusted Handyman</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                placerat.
+              </p>
+              <a href="">Book Handyman</a>
+            </div>
+            <div>
+              <img src="images/layer-3.png" />
+              <h3>A Spotless House</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                placerat.
+              </p>
+              <a href="">Book Handyman</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="task">
+      <div class="card-wrap">
+        <div class="card">
+          <img src="images/layer-6.png" />
+          <div class="card-detail">
+            <h3>House Cleaning</h3>
+            <p>Assistance, House Cleaning</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/office-cleaning.png" />
+          <div class="card-detail">
+            <h3>Office Cleaning</h3>
+            <p>Assistance, Office Cleaning</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/house-cleaning-270x266-1.png" />
+          <div class="card-detail">
+            <h3>Domestic Cleaning</h3>
+            <p>Assistance, Domestic Cleaning</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/maintenance.png" />
+          <div class="card-detail">
+            <h3>Handyman</h3>
+            <p>Assistance, House Cleaning</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/office-cleaning.png" />
+          <div class="card-detail">
+            <h3>Office Cleaning</h3>
+            <p>Assistance, Office Cleaning</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/boot16.png" />
+          <div class="card-detail">
+            <h3>Handyman</h3>
+            <p>Assistance, Domestic Cleaning</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="working-info">
+      <div class="container">
+        <h3>How it Works</h3>
+        <div class="working-info-point">
+          <div>
+            <img src="images/icon-1.png" />
+            <h4>Pick Your Task</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              vehicula ultricies ante
+            </p>
+          </div>
+          <div>
+            <img src="images/icon-2.png" />
+            <h4>Get Matched</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              vehicula ultricies ante
+            </p>
+          </div>
+          <div>
+            <img src="images/icon-6.png" />
+            <h4>Get it Done</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              vehicula ultricies ante
+            </p>
+          </div>
+        </div>
+        <div class="border"></div>
+        <h3>There When You Need</h3>
+        <div class="card-wrap">
+          <div class="card-1">
+            <img src="images/icon-3.png" />
+            <h4>Saves Time</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              vehicula ultricies ante
+            </p>
+          </div>
+          <div class="card-2">
+            <img src="images/icon-4.png" />
+            <h4>Same Day Help</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              vehicula ultricies ante
+            </p>
+          </div>
+          <div class="card-3">
+            <img src="images/icon-4.png" />
+            <h4>Trust & Safety</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              vehicula ultricies ante
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Registration">
+      <div class="container">
+        <div class="Registration-item">
+          <div class="Registration-item-left">
+            <h3>Our Customers Say</h3>
+            <p>
+              When you work with TaskRabbit, you control your schedule, your
+              rates, and the type of work you want to do.
+            </p>
+            <p>
+              Find the jobs you love and the work/life balance that fits you.
+            </p>
+          </div>
+          <div class="Registration-item-right">
+            <a href="">Register Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonial">
+      <div class="container">
+        <h3>Our Customers Say</h3>
+        <h4>Testimonials</h4>
+        <div class="testimonial-icon">
+          <a href=""><i class="fa fa-apple" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-windows" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-google" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-spotify" aria-hidden="true"></i></a>
+        </div>
+        <div class="testimonial-slider">
+             <div>
+            <div class="testimonial-slide">
+                <img src="/images/pexels-pixabay-220453.jpg" alt="" />
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                    placerat. Aenean id dolor luctus, sodales nunc at, fermentum vel
+                    elit viverra vestibulum. Proin ullamcorper elit ipsum. Sed nec
+                    hendrerit tempus, molestie vit.
+                  </p>
+                  <h5>Lucas john</h5>
+                  <h6>freelancers Designer</h6>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="testimonial-slide">
+                <img src="/images/pexels-pixabay-220453.jpg" alt="" />
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                    placerat. Aenean id dolor luctus, sodales nunc at, fermentum vel
+                    elit viverra vestibulum. Proin ullamcorper elit ipsum. Sed nec
+                    hendrerit tempus, molestie vit.
+                  </p>
+                  <h5>Lucas john</h5>
+                  <h6>freelancers Designer</h6>
+                </div>
+              </div>
+            </div> 
+          </div>
+    
+      </div>
+    </section>
+    <footer>
+      <button class="footer-btn">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+      </button>
+      <div class="container flex mobile-footer">
+        <div>
+          <div class="footer-heading">
+            <h4>ABOUT</h4>
+            <h4>CAREERS</h4>
+            <h4>SUPPORT</h4>
+          </div>
+          <div class="footer-paragraphy">
+            <p>2017 stack inc.</p>
+            <p>privacy policy</p>
+            <p>Legal</p>
+          </div>
+        </div>
+        <div>
+          <div class="footer-icon">
+            <i class="fa fa-google" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+          <p>support@stack.io</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
