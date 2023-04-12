@@ -218,6 +218,7 @@ header .lower-header nav ul a:hover {
   background-color: #5ebed6;
   color: #ffffff;
   font-size: 24px;
+  border: none;
 }
 
 .about {
